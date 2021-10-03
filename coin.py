@@ -11,4 +11,4 @@ def obtain_integer_input():
       
 amount = obtain_integer_input()
 numberOfCoins = minimum_coins_required(amount)
-print("The minimum number or coins required is ", numberOfCoins)
+print("The minimum number of coins required is ", numberOfCoins)
