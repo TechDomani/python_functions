@@ -11,3 +11,15 @@ def minimum_coins_required(amountInPence):
     return coinCount
 
 
+def capitalise_even_letters(val):
+    ret = ""
+    count = 1
+    for ind, char in enumerate(val): 
+        if char.isspace():
+            count = count - 1
+            ret = ret + char
+        elif (ind + count) % 2 == 0:
+            ret = ret + char.upper()
+        else:
+            ret = ret + char.lower()
+    return ret
