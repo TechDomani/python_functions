@@ -16,7 +16,7 @@ def capitalise_even_letters(val):
     count = 1
     for ind, char in enumerate(val): 
         if char.isspace():
-            count = count - 1
+            count = count
             ret = ret + char
         elif (ind + count) % 2 == 0:
             ret = ret + char.upper()
